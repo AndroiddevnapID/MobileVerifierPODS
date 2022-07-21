@@ -1,0 +1,6 @@
+framework module Pods_napIDMobileVerifier_Example {
+  umbrella header "Pods-napIDMobileVerifier_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
