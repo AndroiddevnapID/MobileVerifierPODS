@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import napIDMobileVerifier
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var TestImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        TestImageView.circleImageView(borderColor: UIColor.white, borderWidth: 2.0)
     }
 
     override func didReceiveMemoryWarning() {
