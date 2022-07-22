@@ -11,6 +11,9 @@
 		0258519887C7677C735B67B057DC4363 /* XCTestSuite+QuickTestSuiteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 560D7F61EB73F96318EEE38132866C6A /* XCTestSuite+QuickTestSuiteBuilder.m */; };
 		057C1964EBAFCBC649F8012723CDADF5 /* SatisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A21A7636AD5913D02595276F694FB7 /* SatisfyAnyOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		05873F3C288A86A6002F877B /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05873F3B288A86A6002F877B /* UIImageExtension.swift */; };
+		05873F3E288AA28D002F877B /* VerifierStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05873F3D288AA28D002F877B /* VerifierStoryboard.storyboard */; };
+		05873F40288AA2BF002F877B /* Verifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05873F3F288AA2BF002F877B /* Verifier.swift */; };
+		05873F42288AA4A3002F877B /* VerifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05873F41288AA4A3002F877B /* VerifierViewController.swift */; };
 		0650AF0DB8DE333CE5D99D704E29AC02 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF82BC25B4A8E502F627FD92B9D7374 /* AllPass.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		088A5A88342D60B6FCFAEADBF0749220 /* AdapterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874496D37119E2A6CFE19771B8A14A74 /* AdapterProtocols.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		090633CE456C1FA8409CDAB28677CEB0 /* QuickSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 975356AECB2A02D92574E0DFC26FE866 /* QuickSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -258,6 +261,9 @@
 		04AA7B09F311D9825AEA0560CDDC02D9 /* DispatchTimeInterval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchTimeInterval.swift; path = Sources/Nimble/Utils/DispatchTimeInterval.swift; sourceTree = "<group>"; };
 		04FD5437ACADD93898A129C168F4A987 /* napIDMobileVerifier.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = napIDMobileVerifier.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		05873F3B288A86A6002F877B /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = napIDMobileVerifier/Classes/UIImageExtension.swift; sourceTree = "<group>"; };
+		05873F3D288AA28D002F877B /* VerifierStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = VerifierStoryboard.storyboard; path = napIDMobileVerifier/Classes/VerifierStoryboard.storyboard; sourceTree = "<group>"; };
+		05873F3F288AA2BF002F877B /* Verifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Verifier.swift; path = napIDMobileVerifier/Classes/Verifier.swift; sourceTree = "<group>"; };
+		05873F41288AA4A3002F877B /* VerifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VerifierViewController.swift; path = napIDMobileVerifier/Classes/VerifierViewController.swift; sourceTree = "<group>"; };
 		0858C26B13DCB7969267354AD02505B1 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		09149CC034CD55D40F0B090E303EEA61 /* Pods-napIDMobileVerifier_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-napIDMobileVerifier_Tests-dummy.m"; sourceTree = "<group>"; };
 		0B0ABFBD2537639322C9BFA41059D1C5 /* Quick-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-umbrella.h"; sourceTree = "<group>"; };
@@ -802,6 +808,9 @@
 				8064DB2B0AC2CEC89DC95DC04D1BC9A7 /* Pod */,
 				B04837819BD0E61ADF4904570D289371 /* Support Files */,
 				05873F3B288A86A6002F877B /* UIImageExtension.swift */,
+				05873F3D288AA28D002F877B /* VerifierStoryboard.storyboard */,
+				05873F3F288AA2BF002F877B /* Verifier.swift */,
+				05873F41288AA4A3002F877B /* VerifierViewController.swift */,
 			);
 			name = napIDMobileVerifier;
 			path = ../..;
@@ -1318,6 +1327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05873F3E288AA28D002F877B /* VerifierStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1350,6 +1360,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1DE2A9B4569CF8365CF2B6BFB0635A2 /* napIDMobileVerifier-dummy.m in Sources */,
+				05873F40288AA2BF002F877B /* Verifier.swift in Sources */,
+				05873F42288AA4A3002F877B /* VerifierViewController.swift in Sources */,
 				05873F3C288A86A6002F877B /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
